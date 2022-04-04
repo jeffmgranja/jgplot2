@@ -27,7 +27,7 @@ theme_jg <- function(
   axisTickCm = 0.1,
   xText90 = FALSE,
   yText90 = FALSE,
-  addGrid = FALSE
+  addGrid = TRUE
   ){
 
   #Get Grid MM

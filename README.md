@@ -5,8 +5,13 @@
 
 ## Installation
 
-```{r}
+**Check Devtools**
+``` r
 if (!requireNamespace("devtools", quietly = TRUE)) install.packages("devtools")
+```
+
+**Install**
+``` r
 devtools::install_github("jeffmgranja/jgplot2")
 ```
 

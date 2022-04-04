@@ -16,7 +16,7 @@ theme_jg(
   axisTickCm = 0.1,
   xText90 = FALSE,
   yText90 = FALSE,
-  addGrid = FALSE
+  addGrid = TRUE
 )
 }
 \arguments{

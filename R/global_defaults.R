@@ -8,6 +8,7 @@ jg_dependency <- c(
   #Package Startup
   v <- packageVersion("jgplot2")
   packageStartupMessage("jgplot2 : Version ", v)
+  packageStartupMessage("jgplot2 website : https://github.com/jeffmgranja/jgplot2")
   
   #Load Packages
   packageStartupMessage("Loading Required Packages...")
