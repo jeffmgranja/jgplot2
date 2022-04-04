@@ -1,4 +1,4 @@
-<p align="center"><img src="figure/ggplot2_jgplot2.png" alt="" width="350"></a></p>
+<p align="center"><img src="figure/ggplot2_jgplot2.png" alt="" width="800"></a></p>
 <hr>
 
 [![Lifecycle: maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
