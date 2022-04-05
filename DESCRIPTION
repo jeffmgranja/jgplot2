@@ -15,11 +15,17 @@ Encoding: UTF-8
 Imports:
     ggplot2,
     patchwork,
+    grDevices,
+    MASS,
+    plyr
 Depends:
 Collate: 
-  'create_pal.R'
-  'global_defaults.R'
-  'grid.R'
-  'jg_pal.R'
-  'scale.R'
-  'theme.R'
+    'cpal.R'
+    'create_pal.R'
+    'palettes.R'
+    'dpal.R'
+    'global_defaults.R'
+    'grid.R'
+    'hexbin_kde.R'
+    'scale.R'
+    'theme.R'

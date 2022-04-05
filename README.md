@@ -10,7 +10,7 @@
 if (!requireNamespace("devtools", quietly = TRUE)) install.packages("devtools")
 ```
 
-**Install**
+**Install JGPlot2**
 ``` r
 devtools::install_github("jeffmgranja/jgplot2")
 ```
