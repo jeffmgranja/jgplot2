@@ -153,7 +153,7 @@ stat_hex_kde <- function(
       nPlot = nPlot,
       xlim = xlim,
       ylim = ylim,
-      method = method,
+      kdeMethod = kdeMethod,
       na.rm = na.rm,
       fun = fun,
       fun.args = fun.args,
