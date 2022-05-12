@@ -15,7 +15,8 @@ jg_dependency <- c(
   "patchwork",
   "ggh4x",
   "ggrepel",
-  "ggprism"
+  "ggprism",
+  "colorBlindness"
 )
 
 jg_github <- c(

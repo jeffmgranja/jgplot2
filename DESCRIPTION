@@ -20,7 +20,8 @@ Imports:
     plyr,
     ggh4x,
     ggrepel,
-    ggprism
+    ggprism,
+    colorBlindness
 Depends:
 Collate: 
     'cpal.R'
