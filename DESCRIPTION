@@ -17,7 +17,10 @@ Imports:
     patchwork,
     grDevices,
     MASS,
-    plyr
+    plyr,
+    ggh4x,
+    ggrepel,
+    ggprism
 Depends:
 Collate: 
     'cpal.R'
@@ -29,3 +32,6 @@ Collate:
     'hexbin_kde.R'
     'scale.R'
     'theme.R'
+Remotes:
+    zeehio/facetscales,
+    caleblareau/BuenColors

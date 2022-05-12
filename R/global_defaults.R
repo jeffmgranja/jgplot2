@@ -12,7 +12,12 @@ jg_dependency <- c(
   "MASS",
   "plyr",
   "ggplot2",
-  "patchwork"
+  "patchwork",
+  "ggh4x",
+  "ggrepel",
+  "ggprism",
+  "facetscales",
+  "BuenColors"
 )
 
 .onAttach <- function(libname, pkgname){
@@ -33,7 +38,7 @@ jg_dependency <- c(
     tryCatch({
       suppressPackageStartupMessages(require(pkgs[i], character.only=TRUE))
     }, error = function(e){
-      packageStartupMessage("\tFailed To Load Package : ", pkgs[i], " v", packageVersion(pkgs[i]))
+      packageStartupMessage("\tFailed To Load Package : ", pkgs[i])
     })
   }
 
