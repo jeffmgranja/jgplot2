@@ -15,9 +15,12 @@ jg_dependency <- c(
   "patchwork",
   "ggh4x",
   "ggrepel",
-  "ggprism",
-  "facetscales",
-  "BuenColors"
+  "ggprism"
+)
+
+jg_github <- c(
+  "zeehio/facetscales",
+  "caleblareau/BuenColors"
 )
 
 .onAttach <- function(libname, pkgname){
@@ -42,6 +45,17 @@ jg_dependency <- c(
     })
   }
 
+  #Load Custom Packages
+  pkgs <- basename(jg_github)
+  for(i in seq_along(pkgs)){
+    packageStartupMessage("\tLoading Package : ", pkgs[i], " v", packageVersion(pkgs[i]))
+    tryCatch({
+      suppressPackageStartupMessages(require(pkgs[i], character.only=TRUE))
+    }, error = function(e){
+      packageStartupMessage("\tFailed To Load Github Package : devtools::install_github('", jg_github[i], "')")
+    })
+  }
+
   #Set Defaults
   jgplot2()
 
@@ -51,21 +65,26 @@ jg_dependency <- c(
 }
 
 #' @export
-jgplot2 <- function(revert=FALSE){
+jgplot2 <- function(
+    revert = FALSE,
+    dset = "stallion3",
+    cset = "solarExtra",
+    ...
+  ){
 
   if(!revert){
 
     message("Setting jgplot2 presets for color and theme!")
     
     #Set Options
-    options(ggplot2.discrete.colour = function() scale_color_jg(dset = "stallion3", discrete = TRUE))
-    options(ggplot2.discrete.fill = function() scale_fill_jg(dset = "stallion3", discrete = TRUE))
+    options(ggplot2.discrete.colour = function() scale_color_jg(dset = dset, discrete = TRUE))
+    options(ggplot2.discrete.fill = function() scale_fill_jg(dset = dset, discrete = TRUE))
 
-    options(ggplot2.continuous.colour = function() scale_color_jg(cset = "solarExtra", discrete = FALSE))
-    options(ggplot2.continuous.fill = function() scale_fill_jg(cset = "solarExtra", discrete = FALSE))
+    options(ggplot2.continuous.colour = function() scale_color_jg(cset = cset, discrete = FALSE))
+    options(ggplot2.continuous.fill = function() scale_fill_jg(cset = cset, discrete = FALSE))
   
     #Set Global Ggplot2 Theme
-    ggplot2::theme_set(theme_jg())
+    ggplot2::theme_set(theme_jg(...))
 
   }else{
     

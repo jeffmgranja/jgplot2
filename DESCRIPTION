@@ -32,6 +32,3 @@ Collate:
     'hexbin_kde.R'
     'scale.R'
     'theme.R'
-Remotes:
-    zeehio/facetscales,
-    caleblareau/BuenColors
