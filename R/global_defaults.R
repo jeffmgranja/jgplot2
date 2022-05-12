@@ -37,8 +37,8 @@ jg_github <- c(
   packageStartupMessage("Loading Required Packages...")
   pkgs <- jg_dependency
   for(i in seq_along(pkgs)){
-    packageStartupMessage("\tLoading Package : ", pkgs[i], " v", packageVersion(pkgs[i]))
     tryCatch({
+      packageStartupMessage("\tLoading Package : ", pkgs[i], " v", packageVersion(pkgs[i]))
       suppressPackageStartupMessages(require(pkgs[i], character.only=TRUE))
     }, error = function(e){
       packageStartupMessage("\tFailed To Load Package : ", pkgs[i])
@@ -48,8 +48,8 @@ jg_github <- c(
   #Load Custom Packages
   pkgs <- basename(jg_github)
   for(i in seq_along(pkgs)){
-    packageStartupMessage("\tLoading Package : ", pkgs[i], " v", packageVersion(pkgs[i]))
     tryCatch({
+      packageStartupMessage("\tLoading Package : ", pkgs[i], " v", packageVersion(pkgs[i]))
       suppressPackageStartupMessages(require(pkgs[i], character.only=TRUE))
     }, error = function(e){
       packageStartupMessage("\tFailed To Load Github Package : devtools::install_github('", jg_github[i], "')")
