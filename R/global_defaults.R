@@ -53,6 +53,8 @@ jg_github <- c(
       suppressPackageStartupMessages(require(pkgs[i], character.only=TRUE))
     }, error = function(e){
       packageStartupMessage("\tFailed To Load Github Package : devtools::install_github('", jg_github[i], "')")
+      packageStartupMessage("\t\tAttempting to install...")
+      devtools::install_github(jg_github)
     })
   }
 
