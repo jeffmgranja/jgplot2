@@ -12,6 +12,7 @@ jg_dependency <- c(
   "MASS",
   "plyr",
   "ggplot2",
+  "dplyr",
   "patchwork",
   "ggh4x",
   "ggrepel",
