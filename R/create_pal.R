@@ -9,7 +9,7 @@ create_pal_d <- function(values, set = "stallion3"){
       pal <- .stallion3[[length(.stallion3)]]
     }
   }else{
-    pal <- jg_palettes[[set]]
+    pal <- jg_palettes()[[set]]
   }
   if (n > length(pal)) {
       message("Length of unique values greater than palette, interpolating..")
@@ -22,6 +22,6 @@ create_pal_d <- function(values, set = "stallion3"){
 
 #' @export
 create_pal_c <- function(set = "solarExtra"){
-  pal <- jg_palettes[[set]]
+  pal <- jg_palettes()[[set]]
   colorRampPalette(pal)(256)
 }

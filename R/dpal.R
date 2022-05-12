@@ -10,7 +10,7 @@ jg_dpal <- function(set="stallion3"){
         pal <- .stallion3[[length(.stallion3)]]
       }
     }else{
-      pal <- jg_palettes[[set]]
+      pal <- jg_palettes()[[set]]
       if(!is.null(names(pal))){
         pal <- pal[gtools::mixedsort(names(pal))]
       }
