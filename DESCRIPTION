@@ -23,7 +23,9 @@ Imports:
     ggh4x,
     ggrepel,
     ggprism,
-    colorBlindness
+    colorBlindness,
+    facetscales,
+    BuenColors
 Depends:
 Collate: 
     'cpal.R'
