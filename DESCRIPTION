@@ -13,6 +13,7 @@ LazyData: TRUE
 RoxygenNote: 7.1.2
 Encoding: UTF-8
 Imports:
+    devtools,
     ggplot2,
     dplyr,
     patchwork,

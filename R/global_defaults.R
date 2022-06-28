@@ -8,6 +8,7 @@ jg_logo <- "
 "
 
 jg_dependency <- c(
+  "devtools",
   "grDevices",
   "MASS",
   "plyr",
