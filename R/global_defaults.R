@@ -22,7 +22,6 @@ jg_dependency <- c(
 )
 
 jg_github <- c(
-  "zeehio/facetscales",
   "caleblareau/BuenColors"
 )
 
