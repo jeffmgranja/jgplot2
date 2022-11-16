@@ -24,7 +24,6 @@ Imports:
     ggrepel,
     ggprism,
     colorBlindness,
-    facetscales,
     BuenColors
 Depends:
 Collate: 
